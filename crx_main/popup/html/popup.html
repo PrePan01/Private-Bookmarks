@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/publicCSS.css">
+    <style>
+        img {
+            image-rendering: -moz-crisp-edges;
+            image-rendering: -o-crisp-edges;
+            image-rendering: -webkit-optimize-contrast;
+            image-rendering: crisp-edges;
+            -ms-interpolation-mode: nearest-neighbor;
+        }
+
+        .title {
+            font-size: 22px;
+            font-weight: bold;
+            padding: 10px 0 5px 0;
+            text-align: center;
+        }
+
+        /* 主界面 */
+        .bm-ul {
+            padding: 0;
+        }
+
+        .bm-li {
+            list-style: none;
+            padding: 3px 5px;
+            font-size: 16px;
+        }
+
+        /* 添加按钮 */
+        .addBm {
+            display: block;
+            margin: 0 auto 10px auto;
+            width: 60px;
+        }
+
+        /* 列表标题 */
+        .bm-li-title {
+            cursor: pointer;
+            margin-bottom: 3px;
+        }
+
+        /* 删除按钮 */
+        .delBm {
+            float: right;
+            display: inline-block;
+            cursor: pointer;
+            width: 20px;
+            height: 20px;
+        }
+
+        /* 锁定 */
+        .lock {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            width: 30px;
+            cursor: pointer;
+            border: 1px solid black;
+            border-radius: 50%;
+        }
+
+        /* 暂无书签 */
+        .noBm {
+            text-align: center;
+            font-size: 16px;
+            color: rgb(249, 202, 100);
+            margin: 10px 0;
+        }
+    </style>
+</head>
+
+<body style="width: 320px;">
+    <div class="container">
+        <div class="title">隐私书签</div>
+        <img src="../../img/lock.png" alt="" class="lock">
+        <!-- 非第一次使用 -->
+        <div class="mainProg">
+            <div class="noBm">暂无书签，点击下方按钮添加吧！</div>
+            <ul class="bm-ul">
+            </ul>
+            <button class="addBm">添加</button>
+        </div>
+    </div>
+    <script src="../js/popup_main.js"></script>
+    <script src="../js/publicJS.js"></script>
+</body>
+
+</html>

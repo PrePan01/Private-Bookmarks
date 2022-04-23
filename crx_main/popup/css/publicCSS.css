@@ -1,0 +1,38 @@
+/* 输入框样式 */
+input {
+    border: solid 1px rgb(249, 202, 100);
+
+}
+
+input:focus {
+    outline: solid 2px rgb(242, 173, 173);
+    caret-color: rgb(242, 173, 173);
+}
+
+/* 按钮样式 */
+button {
+    border: solid 1px rgb(242, 173, 173);
+    border-radius: 8px;
+    background: none;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+/* 标题 */
+.title {
+    font-size: 22px;
+    font-weight: bold;
+    padding: 3px 0 5px 0;
+    text-align: center;
+    color: rgb(231, 114, 138);
+}
+
+img {
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -o-crisp-edges;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+    -ms-interpolation-mode: nearest-neighbor;
+}

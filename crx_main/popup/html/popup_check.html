@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/publicCSS.css">
+    <style>
+        .body {
+            padding-top: 3px;
+            width: 300px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .leftImg {
+            width: 110px;
+            height: 110px;
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            display: inline-block;
+        }
+
+        .password {
+            margin: 8px 0 5px 0;
+            height: 24px;
+        }
+
+        .btnContainer {
+            display: flex;
+            margin-top: 8px;
+            justify-content: center
+        }
+
+        .confirm {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="body">
+        <img alt="" class="leftImg">
+        <div class="container">
+            <div class="title">隐私书签</div>
+            <input type="password" class="password" placeholder="请输入密码">
+            <div class="btnContainer">
+                <button class="confirm">进入</button>
+                <button class="forget">忘记密码</button>
+            </div>
+        </div>
+    </div>
+    <script src="../js/popup_check.js"></script>
+    <script src="../js/publicJS.js"></script>
+</body>
+
+</html>
